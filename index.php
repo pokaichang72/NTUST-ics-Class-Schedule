@@ -256,6 +256,14 @@ if($_GET['press']){
   </head>
 
   <body>
+    <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=132913846761101";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="container">
       <script type="text/javascript">
@@ -299,11 +307,13 @@ if($_GET['press']){
           </div>
           <div id="collapseOne" class="accordion-body collapse" style="height: 0px;">
             <div class="accordion-inner">
-              把台科大課表做成 iCalender 格式的工具，任何支援匯入 .ics 檔的日曆程式，例如 Google Calender (Android 行事曆)、iOS 日曆 都可以用。會自動把上課地點和授課教師附註上去。
-              <a href="https://lh4.googleusercontent.com/-pxK0g-HjeMA/UHWMpWtdCZI/AAAAAAAAKEQ/p00vcE9pPSo/s2000/5.jpg" target="_blank">圖解</a>
-              <br><br>
-              <iframe src="http://ghbtns.com/github-btn.html?user=pokaichang72&repo=NTUST-ics-Class-Schedule&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
-              <iframe src="http://ghbtns.com/github-btn.html?user=pokaichang72&repo=NTUST-ics-Class-Schedule&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="55" height="20"></iframe>
+              <p>把台科大課表做成 iCalender 格式的工具，任何支援匯入 .ics 檔的日曆程式，例如 Google Calender (Android 行事曆)、iOS 日曆 都可以用。會自動把上課地點和授課教師附註上去。
+              <a href="https://lh4.googleusercontent.com/-pxK0g-HjeMA/UHWMpWtdCZI/AAAAAAAAKEQ/p00vcE9pPSo/s2000/5.jpg" target="_blank">圖解</a></p>
+              <p>有鑒於把課表一個一個手動 key-in 到行事曆會死掉所以做了這個東西。</p>
+              <p>
+                <iframe src="http://ghbtns.com/github-btn.html?user=pokaichang72&repo=NTUST-ics-Class-Schedule&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="22"></iframe>
+                <iframe src="http://ghbtns.com/github-btn.html?user=pokaichang72&repo=NTUST-ics-Class-Schedule&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="55" height="22"></iframe>
+              </p>
 
             </div>
           </div>
@@ -356,8 +366,8 @@ if($_GET['press']){
         </div>
 
         <?php if(!$_GET['press']) echo "-->"; ?>
-
-
+        <hr>
+        <div class="fb-like" data-send="false" data-width="" data-show-faces="false"></div>
       </form>
       <script type="text/javascript">
         function loadbar(){
