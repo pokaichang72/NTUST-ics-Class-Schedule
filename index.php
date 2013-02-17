@@ -3,6 +3,12 @@
 $semester = 1012; //學期
 $sd = 20130218; //開始上課日期
 
+$ThisURL = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+if(substr($ThisURL, -1) != "/") {
+  $ThisURL = dirname($ThisURL);
+  $ThisURL = $ThisURL."/";
+}
+
 function getclassdata($class, $semester){ //取得多個課程資訊並輸出成陣列, 輸入值為課程代碼, 以空格分隔.
   $class_array = explode(" ", $class);
   $i=0;
@@ -188,7 +194,7 @@ if($_GET['press']){
       }
 
       .form-signin {
-        max-width: 300px;
+        max-width: 380px;
         padding: 19px 29px 29px;
         margin: 0 auto 20px;
         background-color: #fff;
@@ -367,7 +373,7 @@ if($_GET['press']){
 
         <?php if(!$_GET['press']) echo "-->"; ?>
         <hr>
-        <div class="fb-like" data-send="false" data-width="" data-show-faces="false"></div>
+        <div class="fb-like" data-href="<?php echo $ThisURL; ?>" data-send="true" data-show-faces="true" style="max-width: 100%; "></div>
       </form>
       <script type="text/javascript">
         function loadbar(){
