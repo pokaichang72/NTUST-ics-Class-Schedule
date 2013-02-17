@@ -304,7 +304,10 @@ if($_GET['press']){
             <div class="accordion-inner">
               把台科大課表做成 iCalender 格式的工具，任何支援匯入 .ics 檔的日曆程式，例如 Google Calender (Android 行事曆)、iOS 日曆 都可以用。會自動把上課地點和授課教師附註上去。
               <a href="https://lh4.googleusercontent.com/-pxK0g-HjeMA/UHWMpWtdCZI/AAAAAAAAKEQ/p00vcE9pPSo/s2000/5.jpg" target="_blank">圖解</a>
-              <br>
+              <br><br>
+              <iframe src="http://ghbtns.com/github-btn.html?user=pokaichang72&repo=NTUST-ics-Class-Schedule&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+              <iframe src="http://ghbtns.com/github-btn.html?user=pokaichang72&repo=NTUST-ics-Class-Schedule&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="55" height="20"></iframe>
+
             </div>
           </div>
         </div>
