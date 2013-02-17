@@ -289,11 +289,8 @@ if($_GET['press']){
         }
       </script>
 
-
-      <form class="form-signin" method="get" onsubmit="return validate_form(this);">
+      <form action="#get" class="form-signin" method="get" onsubmit="return validate_form(this);">
         <h2 class="form-signin-heading">NTUST <br>課表行事曆製作工具</h2>
-
-
         <div class="accordion-group">
           <div class="accordion-heading">
             <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
@@ -338,7 +335,7 @@ if($_GET['press']){
         <?php if(!$_GET['press']) echo "<!--"; ?>
 
 
-        <label for="get">5.</label>
+        <label id="get" for="get">5.</label>
         <a id="get" class="btn btn-large btn-block btn-primary" href="<?php echo "ics/".$semester."-".$_GET['id'].".ics"; ?>">取得日曆</a>
         <center>
           <br>
