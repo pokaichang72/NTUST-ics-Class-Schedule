@@ -173,6 +173,7 @@ if($_GET['press']){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="把台科大課表做成 iCalender 格式的工具，任何支援匯入 .ics 檔的日曆程式，例如 Google Calender (Android 行事曆)、iOS 日曆 都可以用。會自動把上課地點和授課教師附註上去。">
     <meta name="author" content="Neson">
+    <meta property="og:image" content="http://lh3.googleusercontent.com/-gRGcR3IhZ3I/USHkr92eAEI/AAAAAAAATVg/3Xp2W8XTFtY/s0/favicon.png">
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
@@ -242,6 +243,8 @@ if($_GET['press']){
       }
 
     </style>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="favicon.png" rel="image_src" type="image/jpeg">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
