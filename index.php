@@ -238,8 +238,8 @@ if($_GET['press']){
       .load {
         -webkit-transition: 1s;
            -moz-transition: 1s;
-             -o-transition: 1s;
-                transition: 1s;
+             -o-transition: 1s;
+                transition: 1s;
       }
 
     </style>
@@ -261,7 +261,17 @@ if($_GET['press']){
       })();
 
     </script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-35493848-4']);
+      _gaq.push(['_trackPageview']);
 
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </head>
 
   <body>
